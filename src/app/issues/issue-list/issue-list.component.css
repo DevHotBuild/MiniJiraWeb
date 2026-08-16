@@ -57,3 +57,18 @@
 .type-feature {
     color: #2e7d32;
 }
+
+.filters{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.filters button{
+    padding: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
