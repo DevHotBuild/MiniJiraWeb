@@ -1,0 +1,54 @@
+<h2>Tasks ({{ issues.length }})</h2>
+
+<table class="issue-table">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Type</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Priority</th>
+      <th>Assigned user</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (issue of issues; track issue.id) {
+      <tr>
+        <td class="key">{{ issue.key }}</td>
+
+        <td>
+          @switch (issue.type) {
+            @case ('Bug') {
+              <span class="type type-bug">Bug</span>
+            }
+            @case ('Feature') {
+              <span class="type type-feature">Feature</span>
+            }
+            @default {
+              <span class="type">Task</span>
+            }
+          }
+        </td>
+
+        <td>{{ issue.title }}</td>
+        <td>
+          <span class="badge" [class]="'status-' + issue.status">{{ issue.status }}</span>
+        </td>
+
+        <td>{{ issue.priority }}</td>
+
+        <td>
+          @if (issue.assign !== null) {
+            {{ issue.assign }}
+          } @else {
+            <em class="muted">not assigned</em>
+          }
+        </td>
+      </tr>
+    } @empty {
+      <tr>
+        <td colspan="6" class="muted">No tasks</td>
+      </tr>
+    }
+  </tbody>
+</table>
