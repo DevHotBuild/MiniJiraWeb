@@ -1,4 +1,4 @@
-<h2>Tasks ({{ issues().length }})</h2>
+<h2>Tasks ({{ visibleCount() }})</h2>
 
 <div class="filters">
   @for (option of statusOptions; track option) {
@@ -20,7 +20,7 @@
     </tr>
   </thead>
   <tbody>
-    @for (issue of issues(); track issue.id) {
+    @for (issue of filteredIssues(); track issue.id) {
       <tr>
         <td class="key">{{ issue.key }}</td>
 
