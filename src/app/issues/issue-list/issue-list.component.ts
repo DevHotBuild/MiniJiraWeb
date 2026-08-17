@@ -19,7 +19,7 @@ export class IssueListComponent {
       status: 'Done',
       priority: 'Medium',
       assign: 'Dawid',
-      createdAt: '2026-08-01',
+      createdAt: '2026-08-17',
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export class IssueListComponent {
       status: 'InProgress',
       priority: 'High',
       assign: 'Dawid',
-      createdAt: '2026-08-03',
+      createdAt: '2026-08-16',
     },
     {
       id: 3,

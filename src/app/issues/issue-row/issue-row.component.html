@@ -28,3 +28,7 @@
     <em class="muted">not assigned</em>
   }
 </td>
+
+<td [title]="issue().createdAt">
+  {{ issue().createdAt | relativeTime }}
+</td>
