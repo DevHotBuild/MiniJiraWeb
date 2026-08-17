@@ -1,0 +1,30 @@
+<td class="key">{{ issue().key }}</td>
+
+<td>
+  @switch (issue().type) {
+    @case ('Bug') {
+      <span class="type type-bug">Bug</span>
+    }
+    @case ('Feature') {
+      <span class="type type-feature">Feature</span>
+    }
+    @default {
+      <span class="type">Task</span>
+    }
+  }
+</td>
+
+<td>{{ issue().title }}</td>
+<td>
+  <app-status-badge [status]="issue().status" />
+</td>
+
+<td>{{ issue().priority }}</td>
+
+<td>
+  @if (issue().assign !== null; as assignee) {
+    {{ assignee }}
+  } @else {
+    <em class="muted">not assigned</em>
+  }
+</td>

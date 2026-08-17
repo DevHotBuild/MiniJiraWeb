@@ -1,0 +1,21 @@
+.key {
+    font-family: monospace;
+    color: #555;
+}
+
+.type {
+    font-size: 12px;
+    color: #666;
+}
+
+.type-bug {
+    color: #c62828;
+}
+
+.type-feature {
+    color: #2e7d32;
+}
+
+.muted {
+    color: #999;
+}

@@ -1,9 +1,10 @@
 import { Component, computed, Signal, signal } from '@angular/core';
 import { Issue, IssueStatus } from '../models/issue.model';
+import { IssueRowComponent } from '../issue-row/issue-row.component';
 
 @Component({
   selector: 'app-issue-list',
-  imports: [],
+  imports: [IssueRowComponent],
   templateUrl: './issue-list.component.html',
   styleUrl: './issue-list.component.css',
 })

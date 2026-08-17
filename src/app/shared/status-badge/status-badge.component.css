@@ -1,0 +1,25 @@
+.badge {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.status-Backlog {
+    background: #eceff1;
+}
+
+.status-Todo {
+    background: #fff3e0;
+}
+
+.status-InProgress {
+    background: #e3f2fd;
+}
+
+.status-InReview {
+    background: #ede7f6;
+}
+
+.status-Done {
+    background: #e8f5e9;
+}
