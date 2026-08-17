@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 12px 24px;
+}
+
+:host h1 {
+    margin: 0;
+    font-size: 20px;
+}

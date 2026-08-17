@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-primary: #1976d2;
+    --color-surface: #ffffff;
+    --color-background: #fafafa;
+    --color-border: #e0e0e0;
+    --color-text: #212121;
+    --color-muted: #909090;
+    --color-danger: #c62828;
+
+    --status-backlog: #eceff1;
+    --status-todo: #fff3e0;
+    --status-inprogress: #e3f2fd;
+    --status-inreview: #ede7f6;
+    --status-done: #e8f5e9;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+main {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+}

@@ -17,5 +17,5 @@
 }
 
 .muted {
-    color: #999;
+    color: var(--color-muted);
 }

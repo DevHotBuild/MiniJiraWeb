@@ -1,6 +1,8 @@
 .issue-table {
     width: 100%;
     border-collapse: collapse;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
 }
 
 .issue-table th,
@@ -18,8 +20,14 @@
 
 .filters button {
     padding: 6px;
-    border: 1px solid #ccc;
-    background: #fff;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
     border-radius: 4px;
     cursor: pointer;
+}
+
+.filters button.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
 }
