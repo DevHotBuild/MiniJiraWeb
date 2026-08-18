@@ -19,7 +19,19 @@
   <app-status-badge [status]="issue().status" />
 </td>
 
-<td>{{ issue().priority }}</td>
+<td>
+  @switch (issue().priority) {
+    @case ('Critical') {
+      <span class="prio prio-critical">Critical</span>
+    }
+    @case ('High') {
+      <strong>High</strong>
+    }
+    @default {
+      {{ issue().priority }}
+    }
+  }
+</td>
 
 <td>
   @if (issue().assign !== null; as assignee) {

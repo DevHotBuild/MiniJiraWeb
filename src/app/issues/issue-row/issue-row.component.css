@@ -19,3 +19,8 @@
 .muted {
     color: var(--color-muted);
 }
+
+.prio-critical {
+    color: #c62828;
+    font-weight: 600;
+}
