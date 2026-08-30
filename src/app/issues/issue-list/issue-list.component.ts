@@ -1,4 +1,4 @@
-import { Component, computed, inject, Signal, signal } from '@angular/core';
+import { Component, computed, inject, Signal, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Issue, IssueStatus } from '../models/issue.model';
 import { IssueRowComponent } from '../issue-row/issue-row.component';
 import { IssueService } from '../service/issue.service';
@@ -7,6 +7,7 @@ import { IssueService } from '../service/issue.service';
   selector: 'app-issue-list',
   imports: [IssueRowComponent],
   templateUrl: './issue-list.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './issue-list.component.css',
 })
 export class IssueListComponent {
