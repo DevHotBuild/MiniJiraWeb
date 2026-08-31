@@ -47,4 +47,20 @@ export class IssueListComponent {
   });
 
   protected readonly visibleCount = computed(() => this.filteredIssues().length);
+
+  protected readonly countsByStatus = computed<Record<IssueStatus, number>>(() => {
+    const counts: Record<IssueStatus, number> = {
+      Backlog: 0,
+      Done: 0,
+      InProgress: 0,
+      InReview: 0,
+      Todo: 0,
+    };
+
+    for (const issue of this.issueService.issues()) {
+      counts[issue.status]++;
+    }
+
+    return counts;
+  });
 }
