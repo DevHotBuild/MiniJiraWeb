@@ -6,6 +6,9 @@
       {{ option }}
     </button>
   }
+  <button (click)="unassignedOnly.update(v => !v)" [class.active]="unassignedOnly()">
+    Unassigned
+  </button>
 </div>
 
 <table class="issue-table">
