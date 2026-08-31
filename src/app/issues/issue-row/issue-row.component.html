@@ -34,7 +34,7 @@
 </td>
 
 <td>
-  @if (issue().assign !== null; as assignee) {
+  @if (issue().assign; as assignee) {
     {{ assignee }}
   } @else {
     <em class="muted">not assigned</em>
