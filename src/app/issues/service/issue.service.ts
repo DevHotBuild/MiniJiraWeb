@@ -62,5 +62,16 @@ export class IssueService {
       assignee: 'Anna',
       createdAt: '2026-08-05',
     },
+    {
+      id: 6,
+      key: 'PRJ-6',
+      title: 'DB Framework',
+      description: '',
+      type: 'Feature',
+      status: 'Todo',
+      priority: 'Low',
+      assignee: null,
+      createdAt: '2026-08-31',
+    },
   ]);
 }
