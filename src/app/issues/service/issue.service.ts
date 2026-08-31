@@ -15,7 +15,7 @@ export class IssueService {
       type: 'Task',
       status: 'Done',
       priority: 'Medium',
-      assign: 'Dawid',
+      assignee: 'Dawid',
       createdAt: '2026-08-17',
     },
     {
@@ -26,7 +26,7 @@ export class IssueService {
       type: 'Task',
       status: 'InProgress',
       priority: 'High',
-      assign: 'Dawid',
+      assignee: 'Dawid',
       createdAt: '2026-08-16',
     },
     {
@@ -37,7 +37,7 @@ export class IssueService {
       type: 'Feature',
       status: 'Todo',
       priority: 'High',
-      assign: null,
+      assignee: null,
       createdAt: '2026-08-04',
     },
     {
@@ -48,7 +48,7 @@ export class IssueService {
       type: 'Bug',
       status: 'Backlog',
       priority: 'Critical',
-      assign: null,
+      assignee: null,
       createdAt: '2026-08-05',
     },
     {
@@ -59,7 +59,7 @@ export class IssueService {
       type: 'Task',
       status: 'InReview',
       priority: 'Low',
-      assign: 'Anna',
+      assignee: 'Anna',
       createdAt: '2026-08-05',
     },
   ]);

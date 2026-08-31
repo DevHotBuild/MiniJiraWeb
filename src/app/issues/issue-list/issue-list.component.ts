@@ -1,4 +1,11 @@
-import { Component, computed, inject, Signal, signal, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  computed,
+  inject,
+  Signal,
+  signal,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { Issue, IssueStatus } from '../models/issue.model';
 import { IssueRowComponent } from '../issue-row/issue-row.component';
 import { IssueService } from '../service/issue.service';
@@ -36,7 +43,7 @@ export class IssueListComponent {
     return this.issueService
       .issues()
       .filter((issue) => filter === 'All' || issue.status === filter)
-      .filter((issue) => !unassigned || issue.assign == null);
+      .filter((issue) => !unassigned || issue.assignee == null);
   });
 
   protected readonly visibleCount = computed(() => this.filteredIssues().length);
